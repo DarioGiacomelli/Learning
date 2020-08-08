@@ -29,7 +29,7 @@ def choice(menuChoice):
     elif menuChoice == 2:
         print("Making HTB folder")
         machine = raw_input("enter machinename: ")
-        mkdirHTB(machine, ip)
+        mkdirHTB(machine)
     elif menuChoice == 3:
         print("Run Nmap")
         ip = raw_input("enter IP address: " )
@@ -41,7 +41,7 @@ def choice(menuChoice):
 def HTBVpn():
     print("This is where I would put my code... If I had any")
 
-def mkdirHTB(machine, ip):
+def mkdirHTB(machine):
     path = os.path.expanduser("~/HTB/Machines/")
     folder = path + machine + "/"
 
