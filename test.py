@@ -29,11 +29,11 @@ def choice(menuChoice):
     elif menuChoice == 2:
         print("Making HTB folder")
         machine = raw_input("enter machinename: ")
-        ip = raw_input("enter IP address: " )
         mkdirHTB(machine, ip)
     elif menuChoice == 3:
         print("Run Nmap")
-        nmap()
+        ip = raw_input("enter IP address: " )
+        nmap(ip)
     else:
         print("You did not choose a valid option")
 
@@ -61,6 +61,9 @@ def mkdirHTB(machine, ip):
         else:
             print("created folder" + nmapfolder)
             wait = raw_input("Press any key to return to main menu\n")
+
+def nmap(ip):
+    print("This is where I would put my code... If I had any")
 
 #Call MainMenu
 menu()
